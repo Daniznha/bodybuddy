@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcf4f5;
+
+}
+
+#nomeUser {
+    letter-spacing: 2px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #B799FF;
+    padding-top: 20px;
+    color: white;
+    border-radius: 0 30px 30px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+
+
+
+}
+
+li ul {
+    height: 0;
+    overflow: hidden;
+    transition: height .7s;
+    list-style: none;
+
+}
+
+li:hover ul {
+    height: 90px;
+    transition: ease-in 1s;
+
+
+}
+
+li a:hover {
+    padding: 6px;
+    background-color: #B799FF;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    transition: ease-in-out .5s;
+    letter-spacing: 2px;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+
+}
+
+.li {
+    border-bottom: #AEE2FF 1px solid;
+    border-radius: 10px;
+}
+
+ul {
+    margin: 0;
+
+    background-color: #ACBCFF;
+}
+
+.topicos {
+    padding: 15px;
+    list-style: none;
+    height: 310px;
+    border-radius: 20px;
+
+}
+
+.topico a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cronometro {
+    color: #A555EC;
+    text-align: center;
+}
+
+.cronometro ul {
+    background-color: #AEE2FF;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.cronometro li {
+
+    color: #A555EC;
+    list-style: none;
+}
+
+#timer {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+button {
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #AEE2FF;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    color: #A555EC;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    background-color: #B799FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #B799FF 0px 7px 29px 0px;
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: #A760FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+#frases {
+    text-align: center;
+    padding: 4.5% 20px;
+    width: 40%;
+    height: 200px;
+    border: 1px #B799FF solid;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #dcf4f5;
+    color: #A555EC;
+    -webkit-box-shadow: inset -10px -15px 40px 20px #ace0dd;
+    box-shadow: inset -10px -15px 40px 20px #AEE2FF;
+    margin: 10px;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+
+
+.form,
+.input {
+    width: 20%;
+    background: #AEE2FF;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: #cff0ff 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+    color: #A555EC;
+}
+
+.form,
+.input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form,
+.input::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+.form,
+.input:focus {
+    outline: none;
+    border-inline: 2px solid #b700ff;
+}
+
+footer {
+    margin: 35% 0 0 2%;
+}
+
+.footer {
+    margin: 60% 0 0 2%;
+}
+
+.footer1 {
+    margin: 48% 0 0 2%;
+}
+
+
+.enviar {
+    padding: 7px 15px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #AEE2FF;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    color: #A555EC;
+}
+
+.enviar:hover {
+    letter-spacing: 3px;
+    background-color: #B799FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: #B799FF 0px 7px 29px 0px;
+}
+.enviar:active {
+    letter-spacing: 3px;
+    background-color: #A760FF;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}

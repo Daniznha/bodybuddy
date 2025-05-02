@@ -1,0 +1,82 @@
+body{
+margin: 0;
+background-color: #dcf4f5;
+}
+input{
+    margin: 10px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+table, th, td {
+    border: 1px solid #B799FF;
+    
+    
+    
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    
+}
+.btn {
+padding: 5px 10px;
+cursor: pointer;
+border: none;
+border-radius: 3px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+}
+
+.btn-edit, .btn-edit:hover {
+color: white;
+text-decoration: none;
+}
+
+.btn-delete {
+background-color: #fec0cf;
+color: #A555EC;
+}
+.treinos, .infos{
+    margin-left: 20%;
+    text-align: center;
+    color: #A555EC;
+}
+.titulo{
+    margin: 2% 0 ;
+    text-align: center;
+}
+.editar-metas, .metas,.editar-treinos,.editar-infos{
+    text-align: center;
+    margin: 50px auto;
+    color: #A555EC;
+    
+}
+.editar-metas,.editar-treinos,.editar-infos{
+    background-color: #ACBCFF;
+    padding: 50px;
+    width: 500px;
+    border-radius: 20px;
+    -webkit-box-shadow: 20px 20px 30px 10px #FF73CC;
+box-shadow: 20px 20px 30px 10px #D09CFA;
+color: #FFF;
+
+}
+input{
+    border-radius: 10px;
+    background-color:#AEE2FF ;
+    
+}
+
+h3{
+    text-align: center;
+    margin: 14% 0;
+}  
+
