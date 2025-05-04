@@ -39,7 +39,7 @@ $result = $conn->query($sql);
 <body>
     <main>
         <div class="eq">
-            
+
 
             <?php
             if ($result->num_rows > 0) {

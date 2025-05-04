@@ -39,32 +39,30 @@ $result = $conn->query($sql);
 <body>
     <main>
         <div class="eq">
-            
-        
-            
+
             <?php
             if ($result->num_rows > 0) {
                 // Exibir os dados
-                while($row = $result->fetch_assoc()) {
-                    ?>
+                while ($row = $result->fetch_assoc()) {
+            ?>
                     <div class="exercicios">
-                    <h2><?php echo $row["nome"]; ?></h2>
-                    <img src="../imagens/<?php echo $row["imagem"]; ?>" alt="Imagem do exercício" width="100%"><br>
-                    <p><strong>Descrição:</strong> <?php echo $row["descricao"]; ?></p><br>
-                    <p><strong>Músculos trabalhados:</strong> <?php echo $row["musculos_trabalhados"]; ?></p><br>
-                    <p><strong>Instruções:</strong> <?php echo $row["instrucoes"]; ?></p><br>
+                        <h2><?php echo $row["nome"]; ?></h2>
+                        <img src="../imagens/<?php echo $row["imagem"]; ?>" alt="Imagem do exercício" width="100%"><br>
+                        <p><strong>Descrição:</strong> <?php echo $row["descricao"]; ?></p><br>
+                        <p><strong>Músculos trabalhados:</strong> <?php echo $row["musculos_trabalhados"]; ?></p><br>
+                        <p><strong>Instruções:</strong> <?php echo $row["instrucoes"]; ?></p><br>
                     </div>
-                    <?php
+            <?php
                 }
             } else {
                 echo "Não foram encontrados resultados.";
             }
             ?>
-            
+
         </div>
     </main>
     <div class="sidebar">
-    <h3>Exercícios <br>Ar livre</h3>
+        <h3>Exercícios <br>Ar livre</h3>
         <ul class="topicos">
             <li class="li"><a href="./index.php">Início</a></li>
             <li class="li"><a href="./infos.php">Minhas informações</a></li>

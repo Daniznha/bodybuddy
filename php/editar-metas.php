@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
         $data = $_POST['data'];
         $objetivo = $_POST['objetivo'];
         $dt_alvo = $_POST['data-alvo'];
-       
+
 
         // Atualize os dados no banco de dados
         $sql = "UPDATE metas SET objetivo='$objetivo', dt_alvo='$dt_alvo' WHERE id_metas=$id_metas";
@@ -36,9 +36,10 @@ if (isset($_GET['id'])) {
         $row = mysqli_fetch_assoc($result);
 
         // Exiba o formulário de edição com os detalhes do treino preenchidos
-        ?>
+?>
         <!DOCTYPE html>
         <html lang="pt-br">
+
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,26 +48,28 @@ if (isset($_GET['id'])) {
             <link rel="stylesheet" href="../css/treinos.css">
             <link rel="stylesheet" href="../css/style.css">
             <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-            <link rel="shortcut icon" type="imagex/png" href="../imagens/ginastica.ico">                      
+            <link rel="shortcut icon" type="imagex/png" href="../imagens/ginastica.ico">
         </head>
+
         <body>
-        <div class="editar-metas">
-        <h2>Editar Metas</h2>
-        <form action="" method="post">
+            <div class="editar-metas">
+                <h2>Editar Metas</h2>
+                <form action="" method="post">
 
-            <label for="objetivo">Objetivo:</label>
-            <input type="text" name="objetivo" value="<?php echo $row['objetivo']; ?>" required><br>
+                    <label for="objetivo">Objetivo:</label>
+                    <input type="text" name="objetivo" value="<?php echo $row['objetivo']; ?>" required><br>
 
-            <label for="data-alvo">Data Alvo:</label>
-            <input type="date" name="data-alvo" value="<?php echo $row['dt_alvo']; ?>" required><br>
+                    <label for="data-alvo">Data Alvo:</label>
+                    <input type="date" name="data-alvo" value="<?php echo $row['dt_alvo']; ?>" required><br>
 
 
-            <input type="submit" value="Atualizar Metas" class="enviar">
-        </form>
-        </div>
+                    <input type="submit" value="Atualizar Metas" class="enviar">
+                </form>
+            </div>
         </body>
+
         </html>
-        <?php
+<?php
     } else {
         echo "Meta não encontrada.";
     }

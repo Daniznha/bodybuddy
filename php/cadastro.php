@@ -33,7 +33,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro BodyBuddy</title>
-    
+
     <link rel="shortcut icon" type="imagex/png" href="../imagens/ginastica.ico">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -41,7 +41,7 @@ $conn->close();
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <div class="heading">Cadastro BodyBuddy</div><br>
         <div class="mensagem-cad">
             <?php if (isset($mensagem)) : ?>
@@ -83,5 +83,3 @@ $conn->close();
 </body>
 
 </html>
-
-

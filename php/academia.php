@@ -38,10 +38,7 @@ $result = $conn->query($sql);
 
 <body>
     <main>
-        <div class="eq">
-
-            
-
+        <div class="eq">        
             <?php
             if ($result->num_rows > 0) {
                 // Exibir os dados

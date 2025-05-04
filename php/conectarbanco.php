@@ -1,34 +1,33 @@
 <?php
-class conectarbanco {
+class conectarbanco
+{
     private $nome_servidor = "127.0.0.1";
     private $nome_usuario = "userBodybuddy";
     private $senha = "bodybuddy2023";
     private $banco = "bodybuddy";
     private $porta = "3306";
     private $conecta;
-    
-    
-    function __construct() {
-        
-    }
 
-    public function conectar() {
+
+    function __construct() {}
+
+    public function conectar()
+    {
         $this->conecta = new mysqli($this->nome_servidor, $this->nome_usuario, $this->senha, $this->banco, $this->porta);
         // Verificar Conexão
         if ($this->conecta->connect_error) {
-            die("Conexão falhou: " . $this->conecta->connect_error."<br>");
+            die("Conexão falhou: " . $this->conecta->connect_error . "<br>");
         }
         return $this->conecta;
     }
-    
-    public function desconectar() {
+
+    public function desconectar()
+    {
         $this->conecta->close();
     }
-    
-    public function getConecta() {
+
+    public function getConecta()
+    {
         return $this->conecta;
     }
-    
-    
-
 }

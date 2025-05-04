@@ -32,7 +32,7 @@ $resultado = $conn->query($sql);
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel="shortcut icon" type="imagex/png" href="../imagens/ginastica.ico">                      
+    <link rel="shortcut icon" type="imagex/png" href="../imagens/ginastica.ico">
 </head>
 
 <body>

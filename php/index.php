@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="content">
 
             <div class="cronometro">
-                
+
                 <div id="timer">00:00:00.000</div>
                 <button id="startStop">Iniciar</button>
                 <button id="reset">Resetar</button>
@@ -121,7 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     </main>
     <div class="sidebar">
-        
+
         <h3 id="nomeUser">Bem vind<?php if ($sexo == "feminino") {
                                         echo "a";
                                     } else {
@@ -131,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li class="li"><a href="./infos.php">Minhas informações</a></li>
             <li class="li"><a href="./treinos.php">Meus treinos</a></li>
             <li class="li"><a href="./equipamentos.php">Equipamentos</a></li>
-            
+
             <li class="li">Exercícios
                 <ul>
                     <li><a href="./academia.php">Academia</a></li>
